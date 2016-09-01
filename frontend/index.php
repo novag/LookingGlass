@@ -1,4 +1,4 @@
-<? require 'LookingGlass/Config.php'; ?>
+<?php require 'LookingGlass/Config.php'; ?>
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -26,34 +26,34 @@
                     <div class="span12">
                         <div class="well">
                             <span id="legend">Network information</span><!-- IE/Safari dislike <legend> out of context -->
-                            <? if(Config::CONTACT): ?>
+                            <?php if(Config::CONTACT): ?>
                                 <p>Contact: <?= Config::CONTACT ?></p>
-                            <? endif; ?>
-                            <? if(Config::LOCATION): ?>
+                            <?php endif; ?>
+                            <?php if(Config::LOCATION): ?>
                                 <p>Server Location: <b><?= Config::LOCATION ?></b></p>
-                            <? endif; ?>
-                            <? if(Config::TUNNEL_PROTO): ?>
+                            <?php endif; ?>
+                            <?php if(Config::TUNNEL_PROTO): ?>
                                 <p>Tunnel Type: <?= Config::TUNNEL_PROTO ?></p>
-                            <? endif; ?>
-                            <? if(Config::ASN): ?>
+                            <?php endif; ?>
+                            <?php if(Config::ASN): ?>
                                 <p>AS Number: <?= Config::ASN ?></p>
-                            <? endif; ?>
-                            <? if(Config::BGP_ENDPOINT): ?>
+                            <?php endif; ?>
+                            <?php if(Config::BGP_ENDPOINT): ?>
                                 <p>BGP Endpoint: <?= Config::BGP_ENDPOINT ?></p>
-                            <? endif; ?>
-                            <? if(Config::REMOTE): ?>
+                            <?php endif; ?>
+                            <?php if(Config::REMOTE): ?>
                                 <p>Remote: <?= Config::REMOTE ?></p>
-                            <? endif; ?>
-                            <? if(Config::IPV4_TEST || Config::IPV6_TEST): ?>
+                            <?php endif; ?>
+                            <?php if(Config::IPV4_TEST || Config::IPV6_TEST): ?>
                                 <div style="margin-left: 10px;">
-                                    <? if(Config::IPV4_TEST): ?>
+                                    <?php if(Config::IPV4_TEST): ?>
                                         <p>Test IPv4: <?= Config::IPV4_TEST ?></p>
-                                    <? endif; ?>
-                                    <? if(Config::IPV6_TEST): ?>
+                                    <?php endif; ?>
+                                    <?php if(Config::IPV6_TEST): ?>
                                         <p>Test IPv6: <?= Config::IPV6_TEST ?></p>
-                                    <? endif; ?>
+                                    <?php endif; ?>
                                 </div>
-                            <? endif; ?>
+                            <?php endif; ?>
                             <p>Your IP Address: <b><a href="#tests" id="userip"><?= $_SERVER['REMOTE_ADDR'] ?></a></b></p>
                         </div>
                     </div>
