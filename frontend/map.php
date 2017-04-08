@@ -11,8 +11,8 @@
  * @version     1.0.0
  */
 
-require_once 'RateLimit.php';
-require_once 'Config.php';
+require_once 'LookingGlass/RateLimit.php';
+require_once 'LookingGlass/Config.php';
 require_once 'Image/GraphViz.php';
 
 if(isset($_GET['json'])) {
