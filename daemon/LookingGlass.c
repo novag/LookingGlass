@@ -199,9 +199,9 @@ int q_summary(int fd, int pv, int argc, char *argv[]) {
     char *command = malloc(100);
 
     if (pv == 4) {
-        strcpy(command, "/usr/bin/vtysh -c show ip bgp summary");
+        strcpy(command, "/usr/bin/vtysh -c 'show ip bgp summary'");
     } else {
-        strcpy(command, "/usr/bin/vtysh -c show bgp summary");
+        strcpy(command, "/usr/bin/vtysh -c 'show bgp summary'");
     }
 
     fp = popen(command, "r");
